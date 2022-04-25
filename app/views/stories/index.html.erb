@@ -1,0 +1,16 @@
+
+
+<h1>Stories</h1>
+
+<br/>
+
+<div id="stories">
+  <% @stories.each do |story| %>
+    <%= render story %>
+    <p>
+      <%= link_to "Show this story", story %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New story", new_story_path %>
