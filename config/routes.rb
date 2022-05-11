@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :books
   resources :stories
   devise_for :users
   #get 'home/index'
